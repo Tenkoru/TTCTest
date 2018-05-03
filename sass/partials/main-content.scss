@@ -1,0 +1,37 @@
+.main-content__list {
+  @include simple-list;
+  padding-top: 15px;
+  text-align: left;
+}
+
+.main-content__item {
+  display: inline-block;
+  width: 18%;
+  max-height: 210px;
+  overflow-y: hidden;
+  margin-right: 20px;
+  margin-bottom: 25px;
+  padding: 15px;
+  vertical-align: top;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  background-color: $color-mainBlocks;
+
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
+}
+
+.main-content__nav-button {
+  color: $color-black;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.main-content__nav-button--current {
+  color: $color-mainContentNavCurrent;
+}

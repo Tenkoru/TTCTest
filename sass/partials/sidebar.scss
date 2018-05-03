@@ -1,0 +1,20 @@
+.sidebar {
+  display: inline-block;
+  position: absolute;
+  box-sizing:border-box;
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 100%;
+  padding-top: 60px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  background-color: $color-black;
+  float: left;
+  text-align: left;
+
+  @media (max-width: $screen-tablet) {
+    display: none;
+  }
+}

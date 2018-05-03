@@ -1,0 +1,61 @@
+.main-nav {
+  padding-top: 20px;
+}
+
+.main-nav__list {
+  @include simple-list;
+}
+
+.main-nav__item-container {
+  display: inline-block;
+}
+
+.main-nav__item {
+  display: block;
+  padding: 15px;
+  color: $color-black;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 600;
+
+  &:hover {
+    background-color: $color-navDropDown;
+  }
+
+  &:hover > .main-nav__sublist {
+    display: block;
+  }
+}
+
+.main-nav__sublist {
+  @include simple-list;
+  display: none;
+  top: 100%;
+  left: 0;
+  position: absolute;
+  background-color: $color-navDropDown;
+}
+
+.main-nav__sublist-item {
+  display: block;
+  padding-top: 10px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  color: $color-black;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 24px;
+  white-space: nowrap;
+  text-transform: none;
+
+  &:hover {
+    background-color: $color-grey;
+  }
+}
+
+

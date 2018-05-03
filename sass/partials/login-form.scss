@@ -1,0 +1,68 @@
+.login-form {
+  padding-top: 22px;
+}
+
+.login-form__login > input {
+  @include text-input;
+}
+
+.login-form__password {
+  display: block;
+  margin-top: 15px;
+}
+
+.login-form__password > input {
+  @include text-input;
+}
+
+.login-form__eula {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.login-form__eula-description {
+  display: inline-block;
+  color: $color-grey;
+  font-size: 16px;
+  line-height: 18px;
+  padding-left: 20px;
+}
+
+.login-form__eula > input {
+  display: none;
+}
+
+.checkbox-indicator {
+  position: absolute;
+  content: "";
+  width: 13px;
+  height: 13px;
+  top: 0;
+  left: 0;
+  background-color: $color-grey;
+}
+
+.login-form__eula > input:checked + .checkbox-indicator {
+  &::before {
+    position: absolute;
+    content: "";
+    width: 3px;
+    height: 3px;
+    top: 50%;
+    left: 50%;
+    border-left: 1px solid $color-checkboxChecked;
+    border-bottom: 1px solid $color-checkboxChecked;
+    transform: rotate(-45deg) translate(0, -90%);
+  }
+}
+
+.login-form__submit {
+  margin-right: 15px;
+  background-color: $color-submitButton;
+}
+
+.login-form__reset {
+  background-color: $color-resetFormButton;
+}

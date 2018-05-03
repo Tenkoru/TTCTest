@@ -1,1 +1,2 @@
-# TTCTest
+# Template
+Site template

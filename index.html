@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Ваш сайт</title>
+  <link href="css/style.min.css" rel="stylesheet">
+  <link rel="preload" href="fonts/MyriadPro-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/MyriadPro-Regular.woff" as="font" type="font/woff" crossorigin>
+</head>
+<body class="body">
+  <aside class="sidebar">
+    <form action="GET" class="login-form">
+      <label class="login-form__login">
+        <input type="text" placeholder="Текстовое поле" required>
+      </label>
+      <label class="login-form__password">
+        <input type="text" placeholder="********" required>
+      </label>
+      <label class="login-form__eula">
+        <input type="checkbox" checked>
+        <span class="checkbox-indicator"></span>
+        <span class="login-form__eula-description">Я согласен с пользовательским соглашением</span>
+      </label>
+      <input type="submit" class="login-form__submit button" value="Отправить">
+      <input type="reset" class="login-form__reset button" value="Сбросить">
+    </form>
+  </aside>
+  <div class="main-page">
+    <include src="html_modules/header.html"></include>
+    <main class="main-content">
+      <ul class="main-content__list">
+        <li class="main-content__item">Здесь краткое описание. Высота блока
+          зависит от контента, но не более 210пх. Количество таких элементов
+           может быть любым.</li>
+        <li class="main-content__item">Здесь краткое описание. Высота блока
+          зависит от контента, но не более 210пх. Количество таких элементов
+           может быть любым.</li>
+        <li class="main-content__item">Здесь краткое описание. Высота блока
+           зависит от контента, но не более 210пх.</li>
+        <li class="main-content__item">Здесь краткое описание. Высота блока
+          зависит от контента, но не более 210пх. Количество таких элементов
+           может быть любым.</li>
+        <li class="main-content__item">Здесь краткое описание. Высота блока
+          зависит от контента, но не более 210пх. Количество таких элементов
+           может быть любым.</li>
+        <li class="main-content__item">Здесь краткое описание. Высота блока
+           зависит от контента, но не более 210пх.</li>
+      </ul>
+      <div class="main-content__nav">
+        <a class="main-content__nav-button" href="#">1</a>
+        <a class="main-content__nav-button main-content__nav-button--current" href="#">2</a>
+        <a class="main-content__nav-button" href="#">3</a>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

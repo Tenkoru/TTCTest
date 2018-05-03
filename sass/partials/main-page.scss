@@ -1,0 +1,13 @@
+.main-page {
+  min-width: 660px;
+  margin-left: 30%;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  background-color: $color-mainBackground;
+
+  @media (max-width: $screen-tablet) {
+    width: 96%;
+    margin-left: 0;
+  }
+}
